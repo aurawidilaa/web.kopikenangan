@@ -17,6 +17,15 @@ searchButton.addEventListener('click', function (e) {
   searchBox.focus();
 });
 
+// === TOGGLE SHOPPING CART ===
+const shoppingCartButton = document.querySelector('#shopping-cart-button');
+const shoppingCart = document.querySelector('.shopping-cart');
+
+shoppingCartButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  shoppingCart.classList.toggle('active');
+});
+
 // Klik di luar = tutup menu atau form
 document.addEventListener('click', function (e) {
   if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
