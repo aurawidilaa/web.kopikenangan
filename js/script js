@@ -41,7 +41,7 @@ document.addEventListener('click', function (e) {
 
 // === MODAL PRODUK ===
 const itemDetailModal = document.querySelector('#item-detail-modal');
-const itemDetailButtons = document.querySelectorAll('.item-detail-buttons');
+const itemDetailButtons = document.querySelectorAll('.item-detail-button');
 
 itemDetailButtons.forEach((btn) => {
   btn.addEventListener('click', (e) => {
@@ -52,7 +52,7 @@ itemDetailButtons.forEach((btn) => {
 
 // === TUTUP MODAL PRODUK ===
 const closeModal = document.querySelector('.close-icon');
-closeModal.addEventListener('click', () => {
+closeModal.addEventListener('click', (e) => {
   itemDetailModal.style.display = 'none';
 });
 
