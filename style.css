@@ -280,6 +280,16 @@ body {
   -webkit-mask-position: center;
 }
 
+/* 
+Efek CSS Masking:
+- Gambar dimasking menggunakan file SVG.
+- Bagian putih dari SVG akan terlihat, bagian hitam akan disembunyikan.
+- Digunakan prefix -webkit- untuk dukungan Safari.
+
+Perbandingan:
+- mask-image = pakai file gambar SVG atau PNG sebagai bentuk topeng.
+- clip-pa
+
 .about .row .content {
   flex: 1 1 35rem;
   padding: 0 1rem;
